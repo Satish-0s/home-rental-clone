@@ -1,0 +1,28 @@
+<% layout('/layouts/boilerplate')%>
+<div class="row mt-3">
+<div class="col-8 offset-3">
+    <h3>details of <%=Listing.title%></h3>
+</div>
+<div class="card col-6 offset-3 show-card">
+    <img src="<%= Listing.image.url %>" class="card-img-top show-img" alt="listing image" >
+    <div class="card-body">
+        <b><%=Listing.title%></b><br>
+        <%=Listing.description%> <br>
+        &#8377;<%=Listing.price.toLocaleString("en-IN")%> <br>
+        <%=Listing.location%> <br>
+        <%=Listing.country%> <br>
+    <p class="card-text"><%=Listing.title%></p>
+    </div>
+</div>
+    <br><br>
+    <div class="btns">
+        <a href="/listing/<%=Listing._id%>/edit" class="btn btn-dark col-1 offset-3 edit-btn">Edit</a>
+    
+   </form>
+   <form method="POST" action="/listing/<%=Listing._id%>?_method=DELETE">
+    <button class="btn btn-dark offset-5">Delete</button>
+   </form>
+</div>
+</div>
+<br><br> <br><br>
+//show.ejs is showing the details of each listing and there is a section to edit when we click on edit then this page redirect to edit.ejs
