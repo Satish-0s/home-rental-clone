@@ -1,1 +1,1 @@
-# home-rental-clone
+home-rental-clone-project built using HTML, CSS, JavaScript, Node.js, Express, and MongoDB – inspired by Shradha Khapra's project. It includes features like user authentication, property listings, and booking functionality with a responsive UI. A hands-on full-stack web development project for learning and showcasing backend integration.
